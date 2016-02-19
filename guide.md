@@ -2,10 +2,10 @@
 
 Your workshop site ID is **{{siteid}}**.
 
-- [`/live/`](./live/) site – username: `admin`, password: `{{siteid}}`
-- [`/staging/`](./staging/) site (once you create it)
-- [SSH web console](./ssh) – username: `admin`, password: `admin`, sudo allowed
-- [DB Adminer](./db) – username `{{siteid}}`, password `{{siteid}}`
+- [`/live/`](/live/) site – username: `admin`, password: `{{siteid}}`, <a href="/live/">live</live>
+- [`/staging/`](/staging/) site (once you create it)
+- [SSH web console](/ssh) – username: `admin`, password: `admin`, sudo allowed
+- [DB Adminer](/db) – username `{{siteid}}`, password `{{siteid}}`
 
 Useful links:
 
