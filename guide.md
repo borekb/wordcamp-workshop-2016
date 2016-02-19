@@ -3,3 +3,5 @@
 Stub for a workshop guide.
 
 It will use templates like this: {{siteid}}
+
+- [ ] Test checkbox
