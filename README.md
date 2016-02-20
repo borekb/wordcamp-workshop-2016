@@ -1,3 +1,3 @@
-# WordCamp Prague 2016 Workshop
+# Workshop at WordCamp Pragu 2016
 
-- [VersionPress 2.2](https://github.com/borekb/workshop-vp-releases/releases/2.2)
+Get your site at http://workshop.versionpress.net/.
