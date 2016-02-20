@@ -18,7 +18,6 @@ Useful links:
 The goal is to get used to the environment and install & activate VersionPress.
 
 - [ ] Log in to your [SSH console](/ssh). Username: `admin`, password: `admin`.
-    - There a couple of folders in your home directory. Of interest will be the `live` folder which is your main WordPress installation.
 - [ ] Run `cd live`.
 - [ ] Run `wp plugin install ../versionpress-2.2.zip`.
 - [ ] [Log in](/live/wp-admin) to the live site. Username: `admin`, password: `{{siteid}}`.
@@ -44,15 +43,24 @@ Let's view the same changes via pure Git.
 - [ ] Switch to your SSH console and run `git log --oneline`
 - [ ] Find the commit that created a post draft and run `git show <commit>`
 
-Let's create a commit manually. First, quickly add you info (required by Git):
-
-- [ ] Run `git config --global user.email "you@example.com"`
-- [ ] Run `git config --global user.name "Your Name"`
+Let's create a commit manually.
 
 - [ ] Let's edit a `header.php` template. Run `nano wp-content/themes/twentysixteen/header.php`.
 - [ ] Add `<h1 style="color: red;">Added manually</h1>` right after the `<body>` tag.
 - [ ] Save the file: Ctrl + X, answer "Y", then Enter.
 - [ ] Check the [live site](/live) that the change is visible
+
+Now you can commit this change either via WP admin or via command line. Choose one.
+
+**GUI option**:
+
+- [ ] Go to WP admin > VersionPress
+- [ ] Commit using the form above the main table
+
+**Command-line option**:
+
+- [ ] Run `git config --global user.email "you@example.com"`
+- [ ] Run `git config --global user.name "Your Name"`
 - [ ] Back in SSH, run `git status`. Git will tell you that there is a file modified.
 - [ ] Run `git add .` (note the dot) to stage the file
 - [ ] Run `git commit -m "Updated template"` to commit the change
