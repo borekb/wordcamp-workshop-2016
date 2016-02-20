@@ -9,7 +9,7 @@ Useful links:
 | [/live](/live) | Live site. Username: `admin`, password: `{{siteid}}` |
 | [/staging](/staging) | Staging site once you create it. Same username / password |
 | [/ssh](/ssh) | SSH web console. Username: `admin`, password: `admin` (sudo allowed) |
-| [/db](/ssh) | Adminer. Username `{{siteid}}`, password `{{siteid}}` |
+| [/db](/db) | Adminer. Server `10.7.0.2`, Username `{{siteid}}`, password `{{siteid}}` |
 
 
 
