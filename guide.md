@@ -40,39 +40,35 @@ Here you'll make some actions and inspect how VersionPress tracks them.
 
 Let's view the same changes via pure Git.
     
-- [ ] Switch to your SSH console and run `git log --oneline`
+- [ ] Open your [SSH console](/ssh) (username: `admin`, password: `admin`)
+- [ ] `cd` to `live` and run `git log --oneline`
 - [ ] Find the commit that created a post draft and run `git show <commit>`
 
 Let's create a commit manually.
 
 - [ ] Let's edit a `header.php` template. Run `nano wp-content/themes/twentysixteen/header.php`.
-- [ ] Add `<h1 style="color: red;">Added manually</h1>` right after the `<body>` tag.
-- [ ] Save the file: Ctrl + X, answer "Y", then Enter.
+- [ ] Add some text to the `site-branding` element.
+- [ ] Save the file: <kbd>Ctrl + X</kbd>, answer "Y", then <kbd>Enter</kbd>.
 - [ ] Check the [live site](/live) that the change is visible
-
-Now you can commit this change either via WP admin or via command line. Choose one.
-
-**GUI option**:
-
-- [ ] Go to WP admin > VersionPress
-- [ ] Commit using the form above the main table
-
-**Command-line option**:
-
-- [ ] Run `git config --global user.email "you@example.com"`
-- [ ] Run `git config --global user.name "Your Name"`
-- [ ] Back in SSH, run `git status`. Git will tell you that there is a file modified.
-- [ ] Run `git add .` (note the dot) to stage the file
-- [ ] Run `git commit -m "Updated template"` to commit the change
-- [ ] Run `git log --oneline` again to see the new commit
-- [ ] See the same commit in the WP admin
+- [ ] Commit the change either via VP GUI or Git command line:
+    1. **GUI** 
+        - [ ] Go to WP admin > VersionPress
+        - [ ] Commit using the form above the main table
+    2. **Command-line** (SSH console):
+        - [ ] Run `git config --global user.email "you@example.com"`
+        - [ ] Run `git config --global user.name "Your Name"`
+        - [ ] Back in SSH, run `git status`. Git will tell you that there is a file modified.
+        - [ ] Run `git add .` (note the dot) to stage the file
+        - [ ] Run `git commit -m "Updated template"` to commit the change
+        - [ ] Run `git log --oneline` again to see the new commit
+        - [ ] See the same commit in the WP admin
 
 VersionPress is true Git. No emulation, no pseudo-versioning.
 
 
 ## 3 – Undoing changes
 
-- [ ] In WP admin, click *Undo this* for the ugly red thing we added in the last step.
+- [ ] In WP admin, click *Undo this* for the most recent change (theme update).
 - [ ] Visit the live site to see that the change is gone.
 - [ ] Let's try **selective undo**. Click *Undo this* for the `blogname` update. All newer changes have been maintained.
 - [ ] **Undo the undo**. Click the Undo button in the top-most row to get the previous `blogname` again. 
