@@ -9,7 +9,7 @@ Useful links:
 | [/live](/live) | Live site. Username: `admin`, password: `{{siteid}}` |
 | [/staging](/staging) | Staging site once you create it. Same username / password |
 | [/ssh](/ssh) | SSH web console. Username: `admin`, password: `admin` (sudo allowed) |
-| [/db](/db) | Adminer. Server `db.workshop.versionpress.net`, Username `{{siteid}}`, password `{{siteid}}` |
+| [/db](/db) | Adminer. Server `db.workshop.versionpress.net`, username `{{siteid}}`, password `{{siteid}}` |
 
 
 
@@ -17,12 +17,12 @@ Useful links:
 
 The goal is to get used to the environment and install & activate VersionPress.
 
-- [ ] Log in to your [SSH console](/ssh). Username: `admin`, password: `admin`.
-- [ ] Run `cd live`.
-- [ ] Run `wp plugin install ../versionpress-2.2.zip`.
+- [ ] Download VersionPress [from GitHub Releases](https://github.com/versionpress/versionpress/releases).
+    - It must be the release ZIP, e.g., `versionpress-3.0.zip`, not a source code package.
 - [ ] [Log in](/live/wp-admin) to the live site. Username: `admin`, password: `{{siteid}}`.
-- [ ] Activate VersionPress, finish the full activation.
-- [ ] Dismiss the welcome message.
+- [ ] Upload and activate VersionPress plugin as usual.
+- [ ] Fully activate VersionPress – there will be prompts to do that.
+- [ ] Dismiss the welcome message on the VersionPress main screen once it loads.
 
 You should now see a table with two rows – *commits*.
 
