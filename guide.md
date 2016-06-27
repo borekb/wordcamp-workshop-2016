@@ -55,8 +55,6 @@ Let's create a commit manually.
         - [ ] Go to WP admin > VersionPress
         - [ ] Commit using the form above the main table
     2. **Command-line** (SSH console):
-        - [ ] Run `git config --global user.email "you@example.com"`
-        - [ ] Run `git config --global user.name "Your Name"`
         - [ ] Back in SSH, run `git status`. Git will tell you that there is a file modified.
         - [ ] Run `git add .` (note the dot) to stage the file
         - [ ] Run `git commit -m "Updated template"` to commit the change
